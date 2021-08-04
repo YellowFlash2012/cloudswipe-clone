@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+    background-color: #000;
+}
+
+/* header */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+
+    background: linear-gradient(
+        135deg, 
+        rgba(80,131,171,1) 0%, 
+        rgba(54,128,126,1) 65%, 
+        rgba(255,255,255,1) 100%);
+
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.nav-links {
+    margin-right: 4em;
+ 
+}
+
+div.logo {
+    font-size: 4em;
+
+    margin-left: 2em;
+
+    color: #fff;
+}
+
+ul.main-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 2em 0;
+}
+
+ul.main-menu li {
+    margin-right: 0.8em;
+    
+}
+
+i.fas.fa-angle-down {
+    color: #fff;
+    cursor: pointer;
+}
+
+li.sub-menu-parent {
+    position: relative;
+}
+
+li.sub-menu-parent:hover ul.sub-menu {
+    display: block;
+}
+
+ul.sub-menu {
+    display: none;
+    
+    list-style-type: none;
+    background: #4b82a3;
+    border-top: 1px solid #fff;
+
+    width: 15em;
+
+    position: absolute;
+    top: 2em;
+    left: -2em;
+    
+}
+
+ul.sub-menu li {
+    padding: 1em 0;
+    margin-left: 1em;
+}
+
+ul.sub-menu a {
+    color: #fff;
+}
+
+button.dark-light {
+    background: orangered;
+    border: 0;
+    
+    cursor: pointer;
+    padding: 0 1.3em;
+    
+}
+
+div.mobile-menu-icon {
+    display: none;
+}
+
+
+
+/* main */
+/* section hero */
+section.hero {
+    
+}
+
+/* media queries */
+@media screen and (max-width: 980px) {
+    div.nav-links {
+        display: none;
+    }
+
+    div.nav-links.show {
+        display: block;
+    }
+
+    ul.main-menu {
+        flex-direction: column;
+        position: absolute;
+
+        top: 8em;
+        left: 5em;
+        width: 50em;
+    }
+
+    div.nav-links li {
+        background: #4b82a3;
+        border: 1px solid #fff;
+
+        padding: 1em 0;
+    }
+
+    div.nav-links a {
+        padding-left: 0.8em;
+    }
+
+    button.dark-light {
+        padding: 0 1.5em;
+        margin-left: 1em;
+    }
+
+    div.mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        
+        margin-top: 1em;
+        margin-right: 0.5em;
+    }
+
+    i.fas.fa-angle-down {
+        float: right;
+        margin-right: 0.5em;
+    }
+
+    li.sub-menu-parent:hover ul.sub-menu {
+        display: none;
+    }
+}
