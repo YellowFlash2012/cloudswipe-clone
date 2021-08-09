@@ -11,6 +11,7 @@ body {
 
 body.dark {
     background-color: #000;
+    color: #fff;
 }
 
 /* header */
@@ -95,6 +96,8 @@ ul.sub-menu {
     position: absolute;
     top: 2em;
     left: -2em;
+
+    z-index: 1;
     
 }
 
@@ -163,6 +166,7 @@ div.visual img {
     width: 70em;
     height: 46em;
     transform: translateX(13em);
+    z-index: -9;
 }
 
 /* section #2 */
@@ -261,6 +265,216 @@ div.s5-info h3 {
 div.s5-info p {
     font-size: 1.5em;
     color: gray;
+}
+
+/* section #6 */
+div.s6-container {
+    width: 60em;
+    margin: 10em auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+}
+
+
+div.s6-info {
+    margin: auto 0;
+}
+
+div.s6-info h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+div.s6-info p {
+    font-size: 1.5em;
+    color: gray;
+
+}
+
+div.s6-info p.small {
+    margin-top: 6em ;
+    font-size: 0.6em;
+}
+
+/* section #7 */
+.section-seven img {
+    height: 515px;
+    width: 1920px;
+}
+
+/* section #8 */
+section.section-eight h2 {
+    text-align: center;
+    margin: 1.5em 0;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+p.lead {
+    text-align: center;
+    margin: 2.5em 0;
+    color: gray;
+    font-size: 1.3em;
+}
+
+div.solution-container {
+    width: 65vw;
+    margin: 1em auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+div.card-1,
+div.card-2,
+div.card-3  {
+    width: 366px;
+    height: 511px;
+
+    box-shadow: 0 2px 34px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+}
+
+div.solution-container img {
+    display: block;
+    margin: 2em auto;
+    text-align: center;
+}
+
+div.card-1 h3,
+div.card-2 h3,
+div.card-3 h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    
+    margin: 1em 0;
+    text-align: center;
+}
+
+div.card-1 p,
+div.card-2 p,
+div.card-3 p {
+    margin: 1em 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: gray;
+}
+
+/* section #9 */
+div.s9-container {
+    width: 50vw;
+    margin: 10em auto;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+
+    padding: 1.5em 0;
+}
+
+div.s9-container h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    
+}
+
+div.s9-container p {
+    margin: 1.5em 0;
+    color: gray;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+button.s9-btn {
+    display: block;
+    margin: 1.5em auto;
+    background-color: #00aa8b;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5em;
+
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+
+}
+
+/* footer */
+footer {
+    background-color: #000;
+}
+
+div.footer-container {
+    margin: 3em auto;
+    width: 53vw;
+
+}
+
+div.footer-container ul {
+    list-style: none;
+}
+
+div.footer-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+li.head {
+    color: gray;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+div.row-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    margin: 3em 0;
+}
+
+div.row-1 li {
+    margin: 0.5em 0;
+}
+
+div.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.row-2 li {
+    margin: 0.5em 0;
+}
+
+ul.footer-submenu li {
+    list-style: inside;
+    
+}
+
+div.underline {
+    background: gray;
+    height: 0.02em;
+}
+
+div.legal-container {
+    margin: 0em auto;
+    width: 53vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.legal {
+    margin: 1em 0;
+    color: gray;
+}
+
+div.social {
+    margin: 1em 0;
+    color: #fff;
+}
+
+span.brand-name {
+    color: #fff;
 }
 
 /* media queries */

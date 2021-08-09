@@ -9,6 +9,8 @@ const caretDown = document.querySelector('.fa-angle-down');
 
 const subMenu = document.querySelector('.sub-menu');
 
+const fullYear = document.querySelector('.full-year');
+
 //open/close mobile menu
 mobMenuIcon.addEventListener('click', () => {
     
@@ -35,3 +37,6 @@ caretUp.addEventListener('click', () => {
     caretUp.innerHTML = `<i hidden class="fas fa-angle-down"></i>`;
   
 })
+
+//full year dynamic setup
+fullYear.innerHTML = new Date().getFullYear();
