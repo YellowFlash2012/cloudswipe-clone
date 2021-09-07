@@ -40,3 +40,15 @@ caretUp.addEventListener('click', () => {
 
 //full year dynamic setup
 fullYear.innerHTML = new Date().getFullYear();
+
+//blog post per page dynamic setup
+const paginate = (posts) => {
+    const postsPerPage = 9;
+    const numberOfPages = Math.ceil(posts.length / postsPerPage);
+
+    const newPosts = Array.from({ length: numberOfPages }, (_, index) => {
+        const start = index * postsPerPage;
+        return posts.slice(start, start + postsPerPage);
+    })
+    return newPosts;
+}

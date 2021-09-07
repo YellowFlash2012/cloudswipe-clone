@@ -1,0 +1,80 @@
+div.container {
+    width: 53vw;
+    margin: 2em auto;
+
+}
+
+input[type=search] {
+    width: 100%;
+    padding: 0.5em 0;
+    border: 0.3px solid #e6e6e6;
+    outline: none;
+    margin-bottom: 3em;
+}
+
+#categories {
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+div.container select {
+    color: gray;
+    padding: 0.3em 0;
+}
+
+div.post-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.8em;
+    column-gap: 2.2em;
+    margin: 2em auto;
+
+    
+}
+
+div.post-container > div {
+    width: 306px;
+    height: 514px;
+
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);    
+}
+
+div.post-container > div img {
+    background-image: url(assets/post-1.jpg);
+    width: 304px;
+    height: 304px;
+}
+
+div.post-container > div h3 {
+    font-weight: 500;
+    padding-left: 0.8em;
+    line-height: 1.5;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+div.post-container > div h3:hover {
+    color: lightskyblue;
+}
+
+div.post-container > div p {
+    color: gray;
+    line-height: 1.5;
+    padding-left: 0.8em;
+}
+
+div.btn-container {
+    display: block;
+    width: 10em;
+    margin: 2em auto;
+
+}
+
+div.btn-container > button {
+    padding: 0.2em 0.5em;
+    color: blue;
+    border: 0;
+    cursor: pointer;
+}
